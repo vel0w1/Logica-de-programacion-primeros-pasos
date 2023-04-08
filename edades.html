@@ -1,15 +1,26 @@
 <meta charset="UTF-8">
 <script>
-  var tiempo = 2023
+  function saltarlinea() { 
+
+    document.write("<br><br>")
+  } // Función de prueba para saltar linea
+
+  function imprimir(frase) {
+
+    document.write(frase)
+  } // Función de prueba para cambiar "document.write" por "imprimir"
   
-  document.write("Juan tiene: ", (tiempo - 2000), " años", "<br><br>")
-  document.write("Eduardo tiene: ", (tiempo - 1997), " años", "<br><br>")
-  document.write("Felipe tiene: ", (tiempo - 2009), " años", "<br><br>")
+  var tiempo = 2023
+  var salto = "<br><br>"
+  
+  document.write("Juan tiene: ", (tiempo - 2000), " años", salto)
+  document.write("Eduardo tiene: ", (tiempo - 1997), " años", salto)
+  document.write("Felipe tiene: ", (tiempo - 2009), " años", salto)
 
   var edadJuan = 23
   var edadEduardo = 26
   var edadFelipe = 14
   var promedio = (edadJuan + edadEduardo + edadFelipe) / 3
 
-  document.write("El promedio de edad de los 3 hombres es de: ", Math.round(promedio), " años<br><br>")
+  document.write("El promedio de edad de los 3 hombres es de: ", Math.round(promedio), " años", salto)
 </script>
