@@ -9,9 +9,10 @@
     
   } // Función para calcular el IMC de usuarios
    
-  var imcMario = calculo(75, 1.70)
-  var imcCarlos = calculo(64, 1.52)
+  var peso = prompt("Escriba su peso")
+  var altura = prompt("Escriba su altura")
+  var resultado = calculo(peso, altura)
 
-  document.write("El promedio del IMC de Mario y Carlos es de: ", (imcMario + imcCarlos) / 2)
+  document.write("El IMC del usuario es de: ", resultado)
   
 </script>
